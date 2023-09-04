@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: pvz ;
+    src: url(./Brianne_s_hand.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins",sans-serif;
+    
+}
+
+
+body {
+    background: #1a0c24;
+    
+}
+
+
+
+.menu  {
+    width: 300px;
+    float: left;
+    margin-left: 10%;
+    
+}
+
+
+.navigation {
+    background: #ffffff;
+    height: 55px;
+    position: fixed;
+    width: 100%;
+    
+    
+}
+
+
+.navigation ul {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    padding: 15px 15px;
+    margin-right: 10%;
+    
+    list-style: none;
+    
+}
+
+.navigation ul li a {
+    
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: rgb(26, 116, 46);
+    transition: all 0.2s ease-in-out;
+    font-weight: 600;
+}
+
+.ativo {
+    border-bottom: 4px solid rgba(18, 177, 32, 0.61);
+
+}
+    
+.navigation ul li {
+    position: relative;
+    
+}
+
+.dropdown ul{
+    display: none;
+    
+    
+}
+.navigation ul li:hover .dropdown{
+    display: block ;
+    position: absolute;
+    width: 250px;
+    
+    left: 0;
+    top: 100%;
+    background: #fff;
+    transition: all 0.4s ease;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+
+}
+
+.navigation ul li:hover .dropdown ul{
+    display: block;
+    
+}
+
+
+
+.navigation ul li a:hover {
+        text-decoration: underline;
+        border-bottom: 4px solid rgba(18, 177, 32, 0.61);
+        color: rgb(14, 170, 53);
+        transition: all 0.5 ease-in-out;
+               
+}
+
+
+.main img {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #224fce;
+    width: 100%;
+    height: 56vh;
+    background: url(./image/pvzgw2-bfn-hero.jpg.adapt.crop7x2.1920w.jpg);
+    
+}
+
+.main h1 {
+    width: 100%;
+    font-family: Poppins,sans-serif;
+    margin-left: 25%;
+    color: rgb(29, 151, 29);
+    font-weight: 900;
+    font-size: 100px;
+    
+}
+
+h2 {
+    width: 100%;
+    margin-left: 25%;
+    font-family: Poppins,sans-serif;
+    /* background: #224fce; */
+    
+    
+    
+}
+
+
+h2 a {
+    background: #224fce;
+    
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    padding: 15px;
+    
+    
+}
+
+h2 a:hover {
+    background: none;
+    border: 1px solid #224fce;
+}
+
+span {
+   
+    color: #fff;
+}
+
+.catalogo {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+    
+}
+
+.catalogo .teste {
+    width: 90%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 40px;
+    
+    
+}
+.catalogo .jogo2 {
+    
+    border-radius: 30px;
+    width: 430px;
+    height: 430px;
+}
+
+.catalogo .jogo1 {
+    border-radius: 30px;
+   
+}
+
+.catalogo .plot {
+    border-radius: 30px;
+    width: 430px;
+    height: 430px;
+    
+}
+
+.catalogo .teste p{
+    color: white;
+    font-weight: 700;
+    font-family: "Poppins",sans-serif;
+    margin-left: 5%;
+}
+
+.catalogo img {
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: sticky;
+}
+
+
+@media (max-width: 768px) {
+    ul.nav-bar {
+        display: none;
+    }
+    .navigation {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main {
+        background-image: url(./image/pvzgw2-bfn-hero.jpg.adapt.crop7x2.1920w.jpg) ;
+        background-position: 80%;
+        
+    }
+
+    h1,h2 {
+        display: none;
+    }
+}
+
+@media (max-width: 1050px) and (min-width:768px) {
+    .main {
+        
+        background-image: url(./image/pvzgw2-bfn-hero.jpg.adapt.crop7x2.1920w.jpg) ;
+        background-position: 50%;
+    }
+}
+
+.footer {
+    width: 100%;
+    background: #04ac4a;
+    display: flex;
+    justify-content: center;
+    color: rgb(250, 249, 249);
+}
+
+.footer p {
+    font-weight: 600;
+}
+
+.conteudo {
+    display: flex;
+    /* background: #06aa37; */
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    
+}
+
+.conteudo .secao .dave{
+    
+    position: relative;
+    bottom: -23px;
+}
+
+
+
+.conteudo .secao {   
+    width: 60%;
+    background-image: url(./Backyard.jpeg);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+     
+    
+    
+    
+}
+
+
+.secao .chat {
+    position: relative;
+    top: -255px;
+    
+
+}
+.secao p {
+    cursor: pointer;
+    width: 200px;
+    /* height: 120px; */
+    font-family: pvz;
+    position: relative;
+    top: -400px;
+    right: -380px;
+}
+
+.final  {
+    display: flex;
+    background: white;
+    justify-content: center;
+}
+
+.conteudoad  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #1a0c24;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.conteudoad img {
+    float: right;
+    margin-bottom: 10px  ;
+    border-radius: 20px 200px 20px 200px  ;
+}
+
+h3 {
+    
+    font-size: 4rem;
+    color: rgb(248, 248, 248);
+}
+
+.conteudoad span {
+    color: rgb(10, 235, 10);
+}
+
+.user  {
+    padding-top: 8px;
+    width: 30px;
+    color: #224fce;
+}
+
+.user:hover {
+    color: #224fce;
+}
+
+input {
+    padding-left: 10px;
+    border-radius: 5px;
+
+}
+
+_______-----------------------___________
+
+#area {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background: black;
+    height: 100vh;
+    align-items: center;
+    
+}
+
+#formulario {
+    font-weight: 900;
+    color: green;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    margin-right: 25%;
+    margin-left: 30%;
+   
+    border-radius: 30px;
+    background: rgb(255, 255, 255);
+    color: rgb(15, 15, 15);
+    width: 800px;
+    height: 50vh;
+
+}
+
+fieldset {
+    margin: 0 auto;
+    display: flex;
+    color: green;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 50%;
+    border: none;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+label.main-login {
+    font-size: 30px;
+    margin: 0  auto;
+    padding-top: 15px;
+    
+}
+
+input.btn {
+    background: #224fce;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+input.btn:hover {
+    background-color: rgb(82, 141, 219);
+}
+
+input.btn-login {
+    height: 40px;
+}
+
+input {
+    border: 0.1px solid ;
+}
+
+.adde {
+    display: flex;
+    gap: 15px;
+}
+
+.adde a {
+    text-decoration: none;
+    color:  rgb(26, 116, 46);
+}
+
+.adde a:hover {
+    text-decoration: underline;
+        border-bottom: 4px solid rgba(18, 177, 32, 0.61);
+        color: rgb(14, 170, 53);
+        transition: all 0.5 ease-in-out;
+}
+
+
+.fechar {
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    opacity: 50%;
+}
+
+.fechar a {
+    text-decoration: none;
+    color: #1a0c24;
+}
+
+
+.nav-menu {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+.teste1 {
+    display: flex;
+    justify-content: flex-end;
+    background: #000000;
+    
+    
+
+}
+
+
+
+.teste1 li {
+    list-style: none;
+}
+.teste1 a {
+    padding-top: 15px;
+    text-decoration: none;
+    font-family: "Poppins"sans-serif;
+    font-weight: 900;
+    color:  rgb(252, 252, 252);
+}
+
+.user {
+    
+    padding-top: 15px;
+}
+
+.teste1 a:hover {
+    text-decoration: underline;
+        border-bottom: 4px solid rgba(18, 177, 32, 0.61);
+        color: rgb(14, 170, 53);
+        transition: all 0.5 ease-in-out;
+}
